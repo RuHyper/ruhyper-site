@@ -1,52 +1,91 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>RuHyper E-commerce Store</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RuHyper Electronics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4ff;
+      color: #222;
+    }
+    header {
+      background: #0053ba;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .tagline {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .category {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .category:hover {
+      transform: translateY(-5px);
+    }
+    .category img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .footer {
+      background: #0053ba;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to RuHyper Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#neckbands">Neckbands</a></li>
-                <li><a href="#buds">Buds</a></li>
-                <li><a href="#chargers">Chargers</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="neckbands">
-        <h2>Neckbands</h2>
-        <div class="product">
-            <img src="images/neckband1.jpg" alt="Gaming Neckband">
-            <h3>Gaming Neckband</h3>
-            <p>Price: ₹1499</p>
-            <button>Add to Cart</button>
-        </div>
-        <!-- More neckband products -->
-    </section>
-    <section id="buds">
-        <h2>Buds</h2>
-        <div class="product">
-            <img src="images/buds1.jpg" alt="Noise Cancelling Buds">
-            <h3>Noise Cancelling Buds</h3>
-            <p>Price: ₹999</p>
-            <button>Add to Cart</button>
-        </div>
-        <!-- More buds products -->
-    </section>
-    <section id="chargers">
-        <h2>Chargers</h2>
-        <div class="product">
-            <img src="images/charger1.jpg" alt="Fast Charger">
-            <h3>Fast Charger</h3>
-            <p>Price: ₹799</p>
-            <button>Add to Cart</button>
-        </div>
-        <!-- More charger products -->
-    </section>
-    <footer>
-        <p>&copy; 2025 RuHyper Electronics</p>
-    </footer>
+  <header>
+    <h1>RuHyper Electronics</h1>
+    <div class="tagline">Powering Your Digital Life</div>
+  </header>
+
+  <section class="categories">
+    <div class="category">
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922930.png" alt="Neckband" />
+      <div>Bluetooth Neckbands</div>
+    </div>
+    <div class="category">
+      <img src="https://cdn-icons-png.flaticon.com/512/3210/3210058.png" alt="Earbuds" />
+      <div>Bluetooth Earbuds</div>
+    </div>
+    <div class="category">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Charger" />
+      <div>Chargers</div>
+    </div>
+    <div class="category">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Cables" />
+      <div>Cables</div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 RuHyper Electronics | Follow us on Instagram @ruhyperofficial
+  </div>
 </body>
 </html>
