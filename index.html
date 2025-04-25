@@ -4,88 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RuHyper Electronics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4ff;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f3f6fc;
       color: #222;
     }
     header {
-      background: #0053ba;
+      background: #0a53be;
       color: white;
-      padding: 20px;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .menu {
+      font-size: 0.9rem;
+    }
+    .hero {
+      padding: 60px 30px 30px;
       text-align: center;
+      background: linear-gradient(120deg, #0053ba, #2196f3);
+      color: white;
     }
-    h1 {
-      margin: 0;
-      font-size: 2em;
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
     }
-    .tagline {
-      font-size: 1.2em;
-      font-weight: 300;
+    .hero p {
+      font-size: 1rem;
+      opacity: 0.9;
     }
     .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
       padding: 30px;
     }
     .category {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
+      border-radius: 16px;
       padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+      transition: all 0.3s ease;
       cursor: pointer;
-      transition: transform 0.2s;
     }
     .category:hover {
       transform: translateY(-5px);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
     }
     .category img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
+      width: 70px;
+      height: 70px;
       margin-bottom: 10px;
     }
-    .footer {
-      background: #0053ba;
+    .category-name {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    footer {
+      background: #0a53be;
       color: white;
       text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
+      padding: 16px;
+      font-size: 0.85rem;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>RuHyper Electronics</h1>
-    <div class="tagline">Powering Your Digital Life</div>
+    <div class="logo">RuHyper</div>
+    <div class="menu">@ruhyperofficial</div>
   </header>
+
+  <div class="hero">
+    <h1>Welcome to RuHyper</h1>
+    <p>Explore Premium Mobile Accessories at Wholesale Prices</p>
+  </div>
 
   <section class="categories">
     <div class="category">
-      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922930.png" alt="Neckband" />
-      <div>Bluetooth Neckbands</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922930.png" alt="Neckbands">
+      <div class="category-name">Bluetooth Neckbands</div>
     </div>
     <div class="category">
-      <img src="https://cdn-icons-png.flaticon.com/512/3210/3210058.png" alt="Earbuds" />
-      <div>Bluetooth Earbuds</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/3210/3210058.png" alt="Earbuds">
+      <div class="category-name">Bluetooth Earbuds</div>
     </div>
     <div class="category">
-      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Charger" />
-      <div>Chargers</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Chargers">
+      <div class="category-name">Fast Chargers</div>
     </div>
     <div class="category">
-      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Cables" />
-      <div>Cables</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Cables">
+      <div class="category-name">Premium Cables</div>
     </div>
   </section>
 
-  <div class="footer">
-    © 2025 RuHyper Electronics | Follow us on Instagram @ruhyperofficial
-  </div>
+  <footer>
+    © 2025 RuHyper Electronics. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
