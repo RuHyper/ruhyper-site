@@ -1,78 +1,52 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RuHyper Electronics</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #004aad; color: #fff; padding: 20px; text-align: center; }
-    h1 { margin: 0; }
-    .tagline { font-size: 1.2em; color: #cce5ff; }
-    .container { padding: 20px; max-width: 1200px; margin: auto; }
-    .category { margin-bottom: 40px; }
-    .category h2 { color: #004aad; margin-bottom: 10px; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .product { background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 15px; }
-    .product img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
-    .product h3 { margin: 10px 0 5px; font-size: 1.1em; }
-    .product p { margin: 5px 0; font-size: 0.9em; }
-    .footer { background: #004aad; color: white; text-align: center; padding: 10px; margin-top: 40px; }
-  </style>
+    <title>RuHyper E-commerce Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>RuHyper Electronics</h1>
-    <div class="tagline">Powering Your Digital Life</div>
-  </header>
-
-  <div class="container">
-    <!-- Category: Neckbands -->
-    <div class="category">
-      <h2>Bluetooth Neckbands</h2>
-      <div class="products">
+    <header>
+        <h1>Welcome to RuHyper Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#neckbands">Neckbands</a></li>
+                <li><a href="#buds">Buds</a></li>
+                <li><a href="#chargers">Chargers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="neckbands">
+        <h2>Neckbands</h2>
         <div class="product">
-          <img src="https://via.placeholder.com/250x180.png?text=Gaming+Neckband" alt="Gaming Neckband">
-          <h3>Gaming Neckband X1</h3>
-          <p><strong>Features:</strong> Ultra Low Latency, Deep Bass</p>
-          <p><strong>Wholesale Price:</strong> ₹450</p>
-          <p><strong>Warranty:</strong> 6 Months</p>
+            <img src="images/neckband1.jpg" alt="Gaming Neckband">
+            <h3>Gaming Neckband</h3>
+            <p>Price: ₹1499</p>
+            <button>Add to Cart</button>
         </div>
+        <!-- More neckband products -->
+    </section>
+    <section id="buds">
+        <h2>Buds</h2>
         <div class="product">
-          <img src="https://via.placeholder.com/250x180.png?text=Music+Neckband" alt="Music Neckband">
-          <h3>Music Lover Z3</h3>
-          <p><strong>Features:</strong> HD Sound, 20hr Battery</p>
-          <p><strong>Wholesale Price:</strong> ₹420</p>
-          <p><strong>Warranty:</strong> 6 Months</p>
+            <img src="images/buds1.jpg" alt="Noise Cancelling Buds">
+            <h3>Noise Cancelling Buds</h3>
+            <p>Price: ₹999</p>
+            <button>Add to Cart</button>
         </div>
-      </div>
-    </div>
-
-    <!-- Category: Bluetooth Buds -->
-    <div class="category">
-      <h2>Bluetooth Earbuds</h2>
-      <div class="products">
+        <!-- More buds products -->
+    </section>
+    <section id="chargers">
+        <h2>Chargers</h2>
         <div class="product">
-          <img src="https://via.placeholder.com/250x180.png?text=Gaming+Buds" alt="Gaming Buds">
-          <h3>Gaming Pods G5</h3>
-          <p><strong>Features:</strong> Low Latency, Touch Controls</p>
-          <p><strong>Wholesale Price:</strong> ₹580</p>
-          <p><strong>Warranty:</strong> 6 Months</p>
+            <img src="images/charger1.jpg" alt="Fast Charger">
+            <h3>Fast Charger</h3>
+            <p>Price: ₹799</p>
+            <button>Add to Cart</button>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/250x180.png?text=ANC+Buds" alt="ANC Buds">
-          <h3>Noise Cancelling A7</h3>
-          <p><strong>Features:</strong> ANC, Dual Mic</p>
-          <p><strong>Wholesale Price:</strong> ₹630</p>
-          <p><strong>Warranty:</strong> 6 Months</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 RuHyper Electronics. All rights reserved.
-  </div>
+        <!-- More charger products -->
+    </section>
+    <footer>
+        <p>&copy; 2025 RuHyper Electronics</p>
+    </footer>
 </body>
 </html>
